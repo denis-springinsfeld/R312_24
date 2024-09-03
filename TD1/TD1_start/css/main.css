@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(220, 17%, 20%);
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25em 0.75em;
+  border-radius: 0.25rem;
+  min-width: 10ch;
+  min-height: 44px;
+  font-family: inherit;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  color: hsl(220, 17%, 20%);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+.button:focus:active {
+  scale: 0.95;
+}
+.button--primary {
+  background-color: hsl(198, 93%, 60%);
+}
+.button--primary:hover {
+  background-color: hsl(198, 93%, 70%);
+}
+.button--alert {
+  background-color: hsl(158, 64%, 52%);
+}
+.button--alert:hover {
+  background-color: hsl(158, 64%, 62%);
+}
+.button--warning {
+  background-color: hsl(43, 96%, 56%);
+}
+.button--warning:hover {
+  background-color: hsl(43, 96%, 66%);
+}
+.button--error {
+  background-color: hsl(0, 91%, 71%);
+}
+.button--error:hover {
+  background-color: hsl(0, 91%, 81%);
+}/*# sourceMappingURL=main.css.map */
