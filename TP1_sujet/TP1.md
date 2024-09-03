@@ -1,7 +1,10 @@
 # TP1 SASS - Hosting Plans
 
 Figma : https://www.figma.com/file/tmKGUuYddp1ePmp6ADqSH8/Hosting-Plans-(Copy)?node-id=0%3A1
-DS
+
+## DS
+
+```
 /* colors */
 color-neutral-100: #fff
 color-neutral-900: #1f3049
@@ -25,129 +28,70 @@ fw-700: 700
 size-8: 8px
 size-20: 20px;
 size-36: 36px;
-
-
-
-## Exercice 1 : Création d'une card 'plan' : Nesting + Lists/Maps + Variables CSS
-
-Création d'une card 'pricing-plan' en utilisant des List et Maps Sass pour initialiser les Variables CSS (:root).
-
-Notion de contextualisation des variables CSS: 
- Les variables sont définies en fonction de leur contexte, ce qui facilite la gestion des styles de votre application. 
-  ```css
-  --body
-  --heading
-  --bg
-  --btn-text
-  --btn-bg
-  --btn-text-hover
-  --btn-bg-hover
-  ```
-
-  exemple :   `--body: var(--clr-neutral-100);`
-
-```sass
-// Variables de couleur pour un composant de tarification "plan-pricing"
-
-// Couleurs principales
-$primary-color: #3498db;  // Bleu pour les éléments principaux
-$secondary-color: #e74c3c;  // Rouge pour les actions ou les alertes
-$text-color: #333;  // Couleur de texte principale
-$background-color: #f0f0f0;  // Couleur de fond principale
-
-// Couleurs pour le composant "plan-pricing"
-$plan-title-color: $primary-color;  // Couleur du titre du plan
-$plan-price-color: $secondary-color;  // Couleur du prix du plan
-$plan-feature-color: $text-color;  // Couleur des fonctionnalités du plan
-$plan-button-background-color: $primary-color;  // Couleur de fond du bouton
-$plan-button-text-color: white;  // Couleur du texte du bouton
-
-// Utilisation des variables de couleur dans les règles CSS
-.plan-pricing {
-  background-color: $background-color;
-  color: $text-color;
-  border: 1px solid $text-color;
-}
-
-.plan-title {
-  color: $plan-title-color;
-}
-
-.plan-price {
-  color: $plan-price-color;
-}
-
-.plan-feature-list {
-  color: $plan-feature-color;
-}
-
-.plan-button {
-  background-color: $plan-button-background-color;
-  color: $plan-button-text-color;
-  border: none;
-}
-
-// Vous pouvez également définir des variations de couleurs avec lighten() et darken() pour les boutons au survol, par exemple.
-.plan-button:hover {
-  background-color: darken($plan-button-background-color, 10%);
-}
 ```
 
+## Exercice 1 : Création d'une card 'pricing-plan' : Nesting + Lists/Maps + Variables CSS
 
+Création d'une card 'pricing-plan' en utilisant des `List` et `Maps` Sass pour initialiser les Variables CSS.
+
+Vous pouvez contextualiser les variables CSS:
+Les variables sont définies en fonction de leur contexte, ce qui facilite la gestion des styles de votre application.
+
+```css
+--body
+--heading
+--bg
+--btn-text
+--btn-bg
+--btn-text-hover
+--btn-bg-hover
+```
+
+exemple : `--body: var(--clr-neutral-100);`
 
 Base de code
+
 ```html
-  <section class="pricing-plan">
-    <h2 class="pricing-plan__title">Free Plan</h2>
-    <ul class="pricing-plan__features">
-      <li class="pricing-plan__feature">
-        <strong>Domain:</strong> 1 included
-      </li>
-      <li class="pricing-plan__feature">
-        <strong>Bandwidth:</strong> 5 GB
-      </li>
-      <li class="pricing-plan__feature">
-        <strong>Diskspace:</strong> 1 GB
-      </li>
-      <li class="pricing-plan__feature">
-        <strong>Monthly Uniques:</strong> 5,000
-      </li>
-    </ul>
-    <p class="pricing-plan__price">$0<span>/month</span></p>
-    <a href="/" class="pricing-plan__cta-button">Get Started</a>
-  </section>
-  ```
+<section class="pricing-plan">
+  <h2 class="pricing-plan__title">Free Plan</h2>
+  <ul class="pricing-plan__features">
+    <li class="pricing-plan__feature"><strong>Domain:</strong> 1 included</li>
+    <li class="pricing-plan__feature"><strong>Bandwidth:</strong> 5 GB</li>
+    <li class="pricing-plan__feature"><strong>Diskspace:</strong> 1 GB</li>
+    <li class="pricing-plan__feature">
+      <strong>Monthly Uniques:</strong> 5,000
+    </li>
+  </ul>
+  <p class="pricing-plan__price">$0<span>/month</span></p>
+  <a href="/" class="pricing-plan__cta-button">Get Started</a>
+</section>
+```
 
 ## Exercice 2 : Dark card
 
 Créer un modifier --dark pour créer une variante de la card 'plan'.
-
 
 ## Exercice 3 : Refactoring
 
 Utilisez des partials pour restructurer votre code.
 
 Structure du dossier Scss :
-    scss
-      L abstracts/
-      L bases/
-      L components/
-      main.scss
-
+scss
+L abstracts/
+L bases/
+L components/
+main.scss
 
 ## Exercice 4 : Page Hosting Plan
 
-  5 domain
-  250gb of bandwidth
-  5gb of diskspace
-  15,000 monthly uniques
-  $19/month
-    
+5 domain
+250gb of bandwidth
+5gb of diskspace
+15,000 monthly uniques
+$19/month
 
-  15 domain
-  750gb of bandwidth
-  20gb of diskspace
-  50,000 monthly uniques
-  $49/month
-
-
+15 domain
+750gb of bandwidth
+20gb of diskspace
+50,000 monthly uniques
+$49/month
