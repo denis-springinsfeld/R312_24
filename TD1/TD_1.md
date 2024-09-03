@@ -1,6 +1,9 @@
 # TD1 Sass - R3.12 2024/2025
 
-Créer un dossier 'TD1_sass', avec le Terminal initialiser un projet npm, installer sass ...
+- Dupliquer le dossier 'TD1_start',
+- Renommer le dossier en 'TD1_sass1'
+- Ouvrir le dossier avec Visual Studio Code.
+- Avec le Terminal initialiser un projet npm, installer sass ...
 
 Structure de votre dossier de travail
 
