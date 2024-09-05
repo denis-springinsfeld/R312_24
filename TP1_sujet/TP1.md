@@ -55,12 +55,11 @@ Base de code
 <section class="pricing-plan">
   <h2 class="pricing-plan__title">Free Plan</h2>
   <ul class="pricing-plan__features">
-    <li class="pricing-plan__feature"><strong>Domain:</strong> 1 included</li>
-    <li class="pricing-plan__feature"><strong>Bandwidth:</strong> 5 GB</li>
-    <li class="pricing-plan__feature"><strong>Diskspace:</strong> 1 GB</li>
+    <li class="pricing-plan__feature">1 domain</li>
+    <li class="pricing-plan__feature">5gb of bandwidth</li>
+    <li class="pricing-plan__feature">1gb of diskspace</li>
     <li class="pricing-plan__feature">
-      <strong>Monthly Uniques:</strong> 5,000
-    </li>
+      <strong> 5,000 monthly uniques</li>
   </ul>
   <p class="pricing-plan__price">$0<span>/month</span></p>
   <a href="/" class="pricing-plan__cta-button">Get Started</a>
