@@ -67,18 +67,20 @@ Base de code
 
 ## Exercice 2 : Dark card
 
-Créer un modifier --dark pour créer une variante de la card 'plan'.
+Créer un modifier --dark pour créer une variante de la card 'pricing-plan'.
 
 ## Exercice 3 : Refactoring
 
 Utilisez des partials pour restructurer votre code.
 
 Structure du dossier Scss :
+```
 scss
 L abstracts/
 L bases/
 L components/
 main.scss
+```
 
 ## Exercice 4 : Page Hosting Plan
 
