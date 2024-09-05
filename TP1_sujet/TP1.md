@@ -58,8 +58,7 @@ Base de code
     <li class="pricing-plan__feature">1 domain</li>
     <li class="pricing-plan__feature">5gb of bandwidth</li>
     <li class="pricing-plan__feature">1gb of diskspace</li>
-    <li class="pricing-plan__feature">
-      <strong> 5,000 monthly uniques</li>
+    <li class="pricing-plan__feature">5,000 monthly uniques</li>
   </ul>
   <p class="pricing-plan__price">$0<span>/month</span></p>
   <a href="/" class="pricing-plan__cta-button">Get Started</a>
