@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Clr Tokens */
+    --clr-light: 0 0% 100%; /*hsl(0 0% 100%)*/
+
+    --clr-indigo-100: 226 100% 97%; /*hsl(226 100% 97%)*/
+    --clr-indigo-200: 228 96% 89%; /*hsl(228 96% 89%)*/
+    --clr-indigo-300: 230 100% 80%; /*hsl(230 100% 80%)*/
+    --clr-indigo-400: 239 84% 67%; /*hsl(239 84% 67%)*/
+    --clr-indigo-700: 234 100% 64%; /*hsl(243 75% 59%)*/
+    --clr-indigo-800: 245 75% 59%; /*hsl(245 75% 59%)*/
+    --clr-indigo-900: 245 58% 51%; /*hsl(245 58% 51%)*/
+
+    --clr-red-100: 0 100% 97%; /*hsl(0 100% 97%)*/
+    --clr-red-200: 0 96% 89%; /*hsl(0 96% 89%)*/
+    --clr-red-300: 0 100% 80%; /*hsl(0 100% 80%)*/
+    --clr-red-400: 0 84% 67%; /*hsl(0 84% 67%)*/
+    --clr-red-700: 0 100% 64%; /*hsl(0 75% 59%)*/
+    --clr-red-800: 0 75% 59%; /*hsl(0 75% 59%)*/
+    --clr-red-900: 0 58% 51%; /*hsl(0 58% 51%)*/
+
+    --clr-neon-100: 150 100% 90%; /*hsl(150 100% 90%)*/
+    --clr-neon-200: 150 100% 80%; /*hsl(150 100% 80%)*/
+    --clr-neon-300: 150 100% 70%; /*hsl(150 100% 70%)*/
+    --clr-neon-400: 150 100% 60%; /*hsl(150 100% 60%)*/
+    --clr-neon-700: 150 100% 50%; /*hsl(150 100% 50%)*/
+    --clr-neon-800: 150 100% 40%; /*hsl(150 100% 40%)*/
+    --clr-neon-900: 150 100% 30%; /*hsl(150 100% 30%)*/
+
+    /* Contextual Colors */
+    --foreground: var(--clr-light);
+    --background: var(--clr-indigo-900);
+    --muted-foreground: var(--clr-indigo-200);
+    --inverted-foreground: var(--clr-indigo-700);
+    --accent-button: var(--clr-light);
+    --accent-button-hover: var(--clr-indigo-100);
+    --muted-button: var(--clr-indigo-400);
+
+    /* Picture */
+    --bg-image: url("https://media.istockphoto.com/id/1125743026/fr/photo/employ%C3%A9s-de-bureau-%C3%A0-la-r%C3%A9union.jpg?s=612x612&w=0&k=20&c=iLXxntmmacFuzd1cwRc-94QWVGeEO4_oX5Y7XNpwEo0=");
+  }
+
+  .theme-red {
+    /* Contextual Colors for Red Version */
+    --foreground: var(--clr-light);
+    --background: var(--clr-red-900);
+    --muted-foreground: var(--clr-red-200);
+    --inverted-foreground: var(--clr-red-700);
+    --accent-button: var(--clr-light);
+    --accent-button-hover: var(--clr-red-100);
+    --muted-button: var(--clr-red-400);
+  }
+  .theme-neon {
+    /* Contextual Colors for Neon Version */
+    --foreground: var(--clr-light);
+    --background: var(--clr-neon-900);
+    --muted-foreground: var(--clr-neon-200);
+    --inverted-foreground: var(--clr-neon-900);
+    --accent-button: var(--clr-light);
+    --accent-button-hover: var(--clr-neon-100);
+    --muted-button: var(--clr-neon-400);
+  }
+}
